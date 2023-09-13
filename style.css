@@ -256,5 +256,59 @@ footer p{
   margin-bottom: 1rem;
 }
 
+@media (max-width: 790px) { 
+  .image_home{
+    background-color: #049772;
+    align-items: flex-end;
+  }
+
+  .image_home img{
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+ 
+  .image_about img{
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+
+  .about_contacts{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px ) { 
+  .content{
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .content_info{
+    margin-top: 1rem;
+  }
+
+  .contacts{
+    margin-top: 1rem;
+  }
+
+  .image_home{
+    justify-content: flex-start;
+  }
+
+  .image_home img{
+    max-width: 9rem;
+    max-height: 9rem;
+  }
+
+  #about{
+    display: block;
+  }
+  
+  .services{
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+  }
+}
 
 
