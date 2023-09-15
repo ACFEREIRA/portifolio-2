@@ -33,6 +33,17 @@ header{
   padding-bottom: 1rem;
 }
 
+.menu{
+  background: inherit;
+  border: none;
+  display: none;
+}
+
+.menu i{
+  color: var(--color-secondary);
+  font-size: 1rem;
+}
+
 .content{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -258,7 +269,6 @@ footer p{
 
 @media (max-width: 790px) { 
   .image_home{
-    background-color: #049772;
     align-items: flex-end;
   }
 
@@ -278,6 +288,24 @@ footer p{
 }
 
 @media (max-width: 480px ) { 
+ #home{
+  padding-left: 1rem;
+  padding-right: 1rem;
+ }
+
+  header nav{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #about, #services, footer{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .content{
     display: flex;
     -webkit-flex-direction: column-reverse;
@@ -303,11 +331,21 @@ footer p{
 
   #about{
     display: block;
+    padding-bottom: 1rem;
   }
   
+  .image_about{
+   display: none;
+  }
+
+  .about_info{
+    margin-left: 0;
+  }
+
   .services{
     grid-template-columns: 1fr 1fr;
     padding-bottom: 1rem;
+    gap: 1rem;
   }
 }
 
